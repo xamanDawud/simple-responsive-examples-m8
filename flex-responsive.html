@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Responsive</title>
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .box {
+            width: 300px;
+            background-color: skyblue;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        .container2 {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .item {
+            background-color: aquamarine;
+            width: 200px;
+            margin: 20px;
+            height: 100px;
+        }
+
+        @media screen and (max-width:576px) {
+            .container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>Hello Responsive</h1>
+            <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the
+                visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used
+                as a placeholder before final copy is available</p>
+        </div>
+        <div class="box">
+            <h1>Hello Responsive</h1>
+            <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the
+                visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used
+                as a placeholder before final copy is available</p>
+        </div>
+    </div>
+
+    <div class="container2">
+        <div class="item">
+            <p>Lorem 0100</p>
+        </div>
+        <div class="item">
+            <p>Lorem 0200</p>
+        </div>
+        <div class="item">
+            <p>Lorem 0300</p>
+        </div>
+        <div class="item">
+            <p>Lorem 0400</p>
+        </div>
+        <div class="item">
+            <p>Lorem 0500</p>
+        </div>
+        <div class="item">
+            <p>Lorem 0600</p>
+        </div>
+        <div class="item">
+            <p>Lorem 0700</p>
+        </div>
+        <div class="item">
+            <p>Lorem 0800</p>
+        </div>
+        <div class="item">
+            <p>Lorem 0900</p>
+        </div>
+        <div class="item">
+            <p>Lorem 1000</p>
+        </div>
+    </div>
+</body>
+
+</html>
