@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 200px) 50px 50px;
+            gap: 20px;
+        }
+
+        .box {
+            background-color: grey;
+            border: 2px solid saddlebrown;
+        }
+
+        #box1 {
+            grid-row: span 5;
+        }
+
+        #box11,
+        #box12 {
+            grid-column: span 3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box1">
+            <br>
+            <p>Box</p>
+            <br>
+        </div>
+        <div class="box" id="box2">
+            <br>
+            <p>Box</p>
+            <br>
+        </div>
+        <div class="box" id="box3"><br>
+            <p>Box</p>
+            <br>
+        </div>
+        <div class="box" id="box4"><br>
+            <p>Box</p>
+            <br>
+        </div>
+        <div class="box" id="box5"><br>
+            <p>Box</p>
+            <br>
+        </div>
+        <div class="box" id="box6"><br>
+            <p>Box</p>
+            <br>
+        </div>
+        <div class="box" id="box7"><br>
+            <p>Box</p>
+            <br>
+        </div>
+        <div class="box" id="box8"><br>
+            <p>Box</p>
+            <br>
+        </div>
+        <div class="box" id="box9"><br>
+            <p>Box</p>
+            <br>
+        </div>
+        <div class="box" id="box10"><br>
+            <p>Box</p>
+            <br>
+        </div>
+        <div class="box" id="box11"><br>
+            <p>Box</p>
+            <br>
+        </div>
+        <div class="box" id="box12"><br>
+            <p>Box</p>
+            <br>
+        </div>
+    </div>
+</body>
+
+</html>
