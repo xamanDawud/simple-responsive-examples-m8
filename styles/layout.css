@@ -1,0 +1,50 @@
+.header {
+  grid-area: header;
+}
+.nav {
+  grid-area: nav;
+}
+.main-article-area {
+  grid-area: main-article-area;
+}
+.sidebar {
+  grid-area: sidebar;
+}
+.advertising {
+  grid-area: advertising;
+}
+.footer {
+  grid-area: footer;
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "header header header header"
+    "nav main-article-area main-article-area sidebar"
+    "nav main-article-area main-article-area advertising"
+    "footer footer footer footer";
+  gap: 20px;
+}
+
+.header,
+.nav,
+.main-article-area,
+.sidebar,
+.advertising,
+.footer {
+  background-color: sandybrown;
+  border: 1px solid sienna;
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    grid-template-areas:
+      "header header header header"
+      "nav    nav    nav    nav"
+      " main-article-area main-article-area main-article-area main-article-area"
+      " sidebar sidebar sidebar sidebar"
+      " advertising advertising advertising advertising"
+      "footer footer footer footer";
+  }
+}
